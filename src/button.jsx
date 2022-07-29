@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import React from 'react';
 import './App.css';
 
-function Button() {
-  const [times, setTimes] = useState(0);
-  function handleClick() {
-    setTimes(times + 1);
-  }
+// function Button(props) {
+//   const { times, onClick } = props;
+function Button({ times, onClick }) {
   return (
-    <button type="button" onClick={handleClick}>Clickeado { times } veces</button>
+    <button type="button" onClick={onClick}>Clickeado { times } veces</button>
   );
 }
 

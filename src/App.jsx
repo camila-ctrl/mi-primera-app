@@ -3,17 +3,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import InputWithName from './inputWithName';
-import Button from './button';
+import Buttons from './buttons';
 
 function App() { // componente react
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <NavLink></NavLink>
         <InputWithName />
-        <Button />
-        <Button />
-
+        <Buttons />
         <p>
           Hello world!
         </p>
